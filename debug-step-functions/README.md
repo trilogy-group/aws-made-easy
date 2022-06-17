@@ -23,4 +23,4 @@ Debug:
 4. Follow the steps in the article to debug the step function
 
 Cleanup:
-1. goto [infra](infra) folder and run `task diff`, review the changes and then run `task destroy`
+1. goto [infra](infra) folder and run `task destroy`
