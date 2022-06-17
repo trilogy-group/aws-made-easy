@@ -14,7 +14,7 @@ Setup:
 Deploy:
 1. goto [app/place-bet](app/place-bet) folder and run `task build`
 2. goto [app/toss-coin](app/toss-coin) folder and run `task build`
-3. goto infra folder and run `task diff`, review the changes and then run `task deploy`
+3. goto [infra](infra) folder and run `task diff`, review the changes and then run `task deploy`
 
 Debug:
 1. Login to AWS console and navigate to [Step Functions](https://console.aws.amazon.com/states/home)
