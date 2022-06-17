@@ -6,6 +6,7 @@ This is a demo project to help debug step functions.
 
 Setup:
 1. Install [go](https://go.dev/doc/install)
+2. Install [Taskfile](https://taskfile.dev/installation/)
 2. Install [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
 3. Export `CDK_DEFAULT_REGION` and `CDK_DEFAULT_ACCOUNT` environment variables
 4. Setup [AWS credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
