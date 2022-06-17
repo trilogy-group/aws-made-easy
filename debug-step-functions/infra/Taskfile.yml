@@ -14,3 +14,9 @@ tasks:
     cmds:
       - cdk deploy
     silent: true
+
+  destroy:
+    desc: cdk destroy
+    cmds:
+      - cdk destroy
+    silent: true
