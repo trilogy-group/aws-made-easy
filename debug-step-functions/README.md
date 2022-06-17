@@ -1,14 +1,23 @@
-# Welcome to your CDK Go project!
+# Welcome [AWS Made Easy](https://awsmadeeasy.com/) - Debugging Step Functions Demo
 
-This is a blank project for CDK development with Go.
 
-**NOTICE**: Go support is still in Developer Preview. This implies that APIs may
-change while we address early feedback from the community. We would love to hear
-about your experience through GitHub issues.
 
-## Useful commands
+This is a demo project to help debug step functions.
 
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
- * `go test`         run unit tests
+Setup:
+1. Install [go](https://go.dev/doc/install)
+2. Install [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
+3. Export `CDK_DEFAULT_REGION` and `CDK_DEFAULT_ACCOUNT` environment variables
+4. Setup [AWS credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
+
+Deploy:
+1. goto [app/place-bet](app/place-bet) folder and run `task build`
+2. goto [app/toss-coin](app/toss-coin) folder and run `task build`
+3. goto infra folder and run `task diff`, review the changes and then run `task deploy`
+
+Debug:
+1. Login to AWS console and navigate to [Step Functions](https://console.aws.amazon.com/states/home)
+2. Click on the step function `AwsMadeEasy-DebugStepFunctions`
+3. Click on `New execution` button and then click on `Start execution` button
+4. Follow the steps in the article to debug the step function
+
