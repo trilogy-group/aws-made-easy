@@ -4,13 +4,13 @@
 
 This is a demo project to help debug step functions.
 
-This project consists of 2 lambda functions:
+This project consists of 2 [AWS Lambda](https://aws.amazon.com/lambda/) functions:
 1. Toss a coin
 2. Place a bet
 
-A step function is built that will execute these functions in parallel and check the outcome to decide if you win or loose the bet.
+A [AWS Step Function](https://aws.amazon.com/step-functions/) is built that will execute these functions in parallel and check the outcome to decide if you win or loose the bet.
 
-The infrastructure is provisioned using AWS CDK library, and IaC code is written in Go language.
+The infrastructure is provisioned using [AWS CDK](https://aws.amazon.com/cdk/) framework, and IaC code is written in [Go](https://go.dev/) language.
 
 The build/runner system used in this project is [Task](https://taskfile.dev/)
 
