@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  build:
+    desc: build go
+    cmds:
+      - env GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-s -w" -o ../../.dist/toss-coin/main main.go
+      - chmod +x ../../.dist/toss-coin/main
+      - cd ../../.dist/toss-coin && zip main.zip main
+    sources:
+      - ./*.go
+      - main/*.go
+      - Taskfile.yml
+    generates:
+      - ../../.dist/toss-coin/main
+    silent: true
