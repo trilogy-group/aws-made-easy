@@ -1,4 +1,4 @@
-# Welcome [AWS Made Easy](https://awsmadeeasy.com/) - Debugging Step Functions Demo
+# Welcome [AWS Made Easy](https://awsmadeeasy.com/) - Debugging AWS Step Functions Demo
 
 
 
