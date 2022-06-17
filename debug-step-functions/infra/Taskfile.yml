@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  diff:
+    desc: cdk diff
+    cmds:
+      - cdk diff
+    silent: true
+
+  deploy:
+    desc: cdk deploy
+    cmds:
+      - cdk deploy
+    silent: true
